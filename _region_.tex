@@ -1,0 +1,180 @@
+\message{ !name(Paper_v1.tex)}\documentclass[iop,apj,numberedappendix,appendixfloats,twocolappendix]{emulateapj}
+%\usepackage[iop]{emulateapj}
+
+\shorttitle{\sc The SOMETHING Survey}
+\shortauthors{\sc Mathes et~al.}
+
+%\setlength{\topmargin}{0.5in}
+
+\usepackage{natbib}
+\usepackage{iondefs}
+\usepackage{apjfonts}
+
+\begin{document}
+
+\message{ !name(Paper_v1.tex) !offset(-3) }
+
+
+\title{The SOMETHING Survey: Analyzing the Evolution of MgII Absorbers}
+
+\author{
+Nigel L. Mathes\altaffilmark{1},
+Christopher W. Churchill\altaffilmark{1},
+and
+Michael T. Murphy\altaffilmark{2}
+}
+
+\altaffiltext{1}{New Mexico State University, Las Cruces, NM 88003}
+\altaffiltext{2}{Swinburne University of Technology, Victoria 3122, Australia}
+
+\begin{abstract}
+We present a detailed measurement of the redshift number density of MgII absorbers as measured in archival VLT/UVES and Keck/HIRES spectra. This survey examines 432 VLT/UVES spectra from the UVES SQUAD collaboration and 170 Keck/HIRES spectra from the KODIAQ group, allowing for detections of MgII absorbers from $0.08 < z < 2.57$. We employ an accurate, automated approach to line detection which consistently detects absorption lines with equivalent widths $W_r < 0.02\AA$ in $S/N = 40$ spectra. We then measure the equivalent widths, apparent optical depth column densities, and velocity widths for each absorbing system. This results in a complete sample of strong ($W_r > 0.3\AA$) and weak ($Wr < 0.3\AA$) MgII absorbers, allowing for accurate determination of the number density of these absorbers across cosmic time. Preliminary results show power-law behavior for the MgII equivalent width distribution function down to small equivalent widths, implying self-similar absorbing structures. This power law is smooth and shallow at low redshifts ($z < 1.5$), but has a kink at redshifts between $1.5 < z < 2.5$ due to an excess of strong absorbers compared to weak absorbers. These trends seem to follow our general idea of the history of cosmic metal enrichment, with an evolutionary transition occurring around the time of the global star formation peak of the universe.
+
+\end{abstract}
+
+\keywords{galaxies: halos --- quasars: absorption lines}
+
+%============== INTRODUCTION =============================
+
+\section{Introduction}
+\label{sec:intro}
+
+One of the most important questions in modern studies of galactic evolution asks, how do baryons cycle into and out of galaxies, and how does this cycle determine the growth and evolution of galaxies themselves? More specifically, how does the process of gas accretion, star formation, and subsequent supernovae driven feedback shape both the galaxy itself and the circumgalactic medium (CGM) surrounding the galaxy? SOMETHING SOMETHING HOW GAS MOVES AND HOW STARS FORM AND SPECTROSCOPIC SURVEYS AND METAL LINES.
+
+Perhaps one of the most prolific absorption featues, the {\MgIIdblt} doublet, traces cool ($T \simeq 10^4~\mathrm{K}$) metal enriched gas in the disks and halos of galaxies. It is one of the best tracers of this gas because it can exist in a wide range of ionizing conditions, it is observable in optical wavelengths from redshift $0.1 < z < 2.5$, and it has predictable line characteristics defined by its resonant doublet nature which make it ideal for automated searches. 
+
+
+
+%============== SAMPLE DESCRIPTION, DATA, ANALYSIS =======================
+
+\section{Data and Analysis}
+\label{sec:data}
+
+\subsection{Quasar Spectra Sample}
+
+We have assembled a sample of 602 archival quasar spectra observed with the VLT/UVES and KECK/HIRES spectrographs. The data originates from two archival data mining efforts - the UVES Squad collaboration (432 spectra) led by Michael Murphy, and the KODIAQ Survey (170 spectra) led by John O'Meara \citep{OMeara2015}. The spectra range in signal-to-noise from $XXX$ to $YYY$, quasar emission redshifts span $XXX < z < YYY$, and wavelength coverage for each spectrum spans either $3000 - 6600\AA$ or $3000 - 10,000\AA$, depending upon whether the red arm of each spectrograph was used.
+
+% ============== Continuum Fitting and Line Detection ======================================
+
+\subsection{Continuum Fitting and Line Detection}
+\label{sec:detection}
+
+The KODIAQ data sample is reduced and fully continuum fit, delivered as normalized spectra according to the prescriptions of \cite{OMeara2015}. The UVES Squad sample also comes reduced, but with an automatic, low order polynomial continuum fit applied. This fith can incorrectly estimate the continuum around narrow emission regions and broad absorption features. For the UVES data sample, I add a higher order continuum fit to difficult regions of the spectra. We use UVES\_popler, an ESO/VLT UVES post-pipeline echelle reduction program written by Michael T. Murphy (Copyright 2003-2015 Michael T. Murphy) to apply these fits, preserving continuity of the continuum with with non-absorbing regions. 
+
+The next step involves detecting all {\MgII} absorption features. We first limit the search range to regions of the spectrum redward of the {\Lya} emission, as {\Lya} forest contamination would render automatic detection of weaker metal lines nearly impossible. We also do not search $5000~\kms$ blueward of the quasar emission redshift in order to avoid absorbers associated with the quasar itself. Finally, we exclude regions of strong telluric absorption bands, specifically from $6277 - 6318 \AA$, $6868 - 6932 \AA$, $7594 - 7700 \AA$, and $9300 - 9630 \AA$, finding that the molecular line separations and ratios can lead to numerous false positives when searching for {\MgII} doublets. 
+
+To find all intervening {\MgIIdblt} absorbers, we employ a techinque outlined in \cite{Zhu2013}, in which we perform a matched filter search for absorption candidates detected above a certain signal-to-noise (S/N) threshold. The filter is a top hat function centered at the wavelength of the desired redshifted absorption line. Its width is selected to match the resolution of the spectrograph used (VLT/UVES $\simeq$ 40,000; KECK/HIRES $\simeq$ 45,000), set as the FWHM of an unresolved gaussian absorption feature. We convolve the filter with the normalized spectrum to generate a normalized power spectrum in redshift space, with absorption features having positive power. 
+
+Because the error spectrum in both instruments is complicated and often discontinuous, we cannot convolve the filter with the errors to derive normalized noise estimates. Instead, we examine the noise in the derived power spectrum. We sigma clip chunks of the power spectrum before calculating the standard deviation of the underlying noise. We take this measurement as the noise and require a detected line have a measured $S/N > 5\sigma$ in the power spectrum. A confirmed doublet detetection for {\MgIIdblt} requires detection of $S/N_{\MgII2796} > 5\sigma$ and $S/N_{\MgII2803} > 3\sigma$. In addition, in our automated routines we remove detections with non-physical doublet ratios in unsaturated regions; specifically, we exclude cases where $W_r(2803) > W_r(2796)$ and $W_r(2803) < 0.3 \times W_r(2796)$.
+
+All absorption features are visually verified upon completion of the detection algorithm. Multiple feature detections within $\pm 500 km/s$ of each other are grouped together to generate absorption systems to be analyzed. Once absorption systems are identified, we calculate the optical depth-weighed mean absorption redshift to definen the center of the entire absorption system. 
+
+% ============== Measuring Absorption Properties ======================================
+
+\subsection{Measuring Absorption Properties}
+\label{sec:measuring}
+
+For each absorption system, we automatically define the wavelength bounds of each absorbing region by finding where 3 pixels of the absorption trough recover past the $1\sigma$ error level int he spectrum., Within these regions we calculate equivalent widths ($W_r$), velocity widths ($\Delta v$), kinematic spreads ($\Omega_v$), apparent optical depth (AOD) column densities ($log(N)$), and absorption asymmetries. 
+
+
+%============= RESULTS: Basic Absorption Properties =========================
+
+\section{Results}
+\label{sec:results}
+
+% ================ Parameter Distributions ================
+\subsection{Sample Characterization}
+\label{sec:sample}
+
+
+Distributions for MgII absorbers. Histograms of redshfit, EW, logN, velocity spread.
+
+% ================ dN/dZ + dN/dX ================
+\subsection{dN/dZ and dN/dX}
+\label{dndzdndx}
+
+Previous studies of the statistical properties of ${\MgII}$ absorbers have been forced to focus either on strong or weak absorbers. The largest sample of quasar spectra originates from the Sloan Digital Sky Survey (SDSS), which employs a spectrograph with an instrumental resolution around $69~\kms$, limiting SDSS absorption surveys to strong absorbers \citep{Zhu2013,Cooksey2013} (MORE CITATIONS). Conversely, previous studies of weak absorbers used small samples of quasar spectra, never exceeding 50 independent observations \citep{Kacprzak2011} (MORE CITATIONS). In this paper, we aim to characterize the evolution of the incidence rate, number density per absorption path length, and cosmic mass density of all ${\MgII}$ absorbers over the history of the universe.
+
+The number density of {\MgII} absorbers per redshift path length and its associated variance is defined as
+
+\begin{equation}
+\frac{d N}{d Z} = \sum_{i}\frac{1}{\Delta Z(W_0^i)},\quad \sigma^2_{\frac{d N}{d Z}} = \sum_{i} \Big[\frac{1}{\Delta Z(W_0^i)}\Big]^2
+\label{eqn:dndz}
+\end{equation}
+
+where we count the number of {\MgII} absorbers, dividing by the total searched redshift path length ($\Delta Z$), defined as
+
+\begin{equation}
+\Delta Z(W_0^i) = \int_{z_0}^{z_1} g(W_0^i, z)\,dz,
+\label{eqn:deltaz}
+\end{equation}
+
+where  the integral of the equivalent width sensitivity function,\ $g(W_r, z)$ is the equivalent width sensitivity function. Equation (6) in \cite{Lanzetta1987} defines $g(W_r, z)$, which counts the number of spectra in which a given equivalent width absorption line maybe detectected at the $5\sigma$ level in a given redshift interval. 
+
+\begin{equation}
+\frac{d N}{d X} = \sum_{i}\frac{1}{\Delta X(W_0^i)},\quad \sigma^2_{\frac{d N}{d Z}} = \sum_{i} \Big[\frac{1}{\Delta X(W_0^i)}\Big]^2
+\label{eqn:dndx}
+\end{equation}
+
+\begin{equation}
+\Delta X(W_0^i) = 2 \sqrt{\Omega_M (1 + \Delta Z)^3 + \Omega_{\Lambda}} / (3 \Omega_M),
+\label{eqn:deltax}
+\end{equation}
+
+\begin{figure*}[bth]
+\plotone{PLOTS/hist_z_MgII_dndx.pdf}
+\caption{$\frac{dN}{dX}$ as a function of redshift for varying $W_r(2796)$ cuts. We see enhancement of stronger {\MgII} absorbers around redshift 2.}
+\label{fig:dndx_cuts}
+\end{figure*}
+
+% ================ EW's + logN ================
+\subsection{Equivalent Width and Column Density Distributions}
+\label{fwfn}
+
+
+
+\begin{figure*}[bth]
+\plotone{PLOTS/hist_ew_MgII_dndx.pdf}
+\caption{The equivalent width distribution of {\MgII} absorbers, defined as the comoving line density ($\frac{dN}{dX}$) in each equivalent width bin divided by the bin width. We fit this distribution with a Schechter function, capturing the self-similar power law behavior of the distribution before the exponential cutoff limiting the size of {\MgII} absorbers.}
+\label{fig:dndx_cuts}
+\end{figure*}
+
+\begin{figure*}[bth]
+\plotone{PLOTS/hist_logN_MgII_dndx.pdf}
+\caption{The column density distribution of {\MgII} absorbers, defined as the comoving line density in each column density bin divided by the bin width. We fit this distribution with a Schechter function.}
+\label{fig:dndx_cuts}
+\end{figure*}
+
+% ================ Omega_MgII ================
+\subsection{Omega\_MgII}
+\label{omegamgii}
+
+Show plots, explain.
+
+\begin{figure*}[bth]
+\plotone{PLOTS/Omega_MgII.pdf}
+\caption{$\Omega_{\MgII}$ as a function of redshift. The cosmic mass density of {\MgII} stays roughly flat near a value of $1 \times 10^{-9}$, with a potential increase from $z = 0.1$ to $z = 2.5$.}
+\label{fig:omegaMgII}
+\end{figure*}
+
+
+% ================ DISCUSSION ================
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{SOMETHING}
+Say something
+
+% ================ CONCLUSIONS ================
+\section{Conclusions}
+\label{sec:conclusion}
+
+Stuff
+
+
+
+\bibliographystyle{apj}
+\bibliography{bibliography}
+
+\end{document}
+\message{ !name(Paper_v1.tex) !offset(-180) }
