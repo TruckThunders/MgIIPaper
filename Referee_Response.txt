@@ -1,0 +1,68 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+3. Results
+
+3.1. Sample Characterization
+
+The UVES sample is, on average, slightly higher signal to noise, than the Keck sample. Because of this, the UVES sample has more very weak MgII absorbers. In addition, the UVES sample has more redshift path coverage at high redshift because the UVES data more frequently extends above 6000 angstrom.
+
+However, in the analysis of any distributions, such as the comparison between our equivalent width frequency distribution and that of Nestor, 2005, these detection sensitivities and redshift path length coverages are fully accounted for by our well-characterized equivalent width detection limits and by always working in units of dN/dz or dN/dX when computing the frequency distributions.
+
+Pixelization is the same. Pixels per resolution element are the same. ISF are the same. My code doesn't make any assumptions based upon these characteristics. My code does not treat them any differently. Highly extensive analysis that has no bearing on the results of the paper.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+1. Introduction
+
+- With regards to why Nestor 2005 was used instead of...
+  a) Prochter et al. 2006a - With a lower equivalent width limit of 1.0 angstroms, there is not enough sample overlap to make a fair comparison. In addition, no equivalent width frequency distribution is presented.
+
+  b) Quider et al. 2011 - No analysis is provided, only a catalog. We wished to avoid download and re-analyzing a different sample.
+
+  c) Lundgren 2009 - The sample only goes up to z = 0.8, so there is not enough path length overlap. In addition, they only analyze down to equivalent widths of 0.8 angstroms.
+
+  d) Zhu and Menard 2013 - This sample is very consistent with our study, however no full sample equivalent width frequency distribution is presented. It is important to note that in the Appendix, the authors showed that the sample of Nestor 2005 is fully consistent with their data and methods.
+
+  e) Seyffert 2013 - Only analyzed down to equivalent widths of 0.6 angstroms, and don't present equivalent width frequency distribution.
+
+  f) Raghunathan 2016 - No equivalent width frequency distribution presented.
+
+Overall, based upon the sample still holding up as an unbiased, representative description of SDSS MgII absorbers, and the use of very similar analysis techniques when constructing the frequency distribution, we find it most appropriate to compare to Nestor 2005 when attempting to quantify bias in The Vulture Survey.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+2. Data and Analysis
+
+2.2 - Concerning discussing any differences between the sightlines observed with UVES/HIRES:
+
+  Systematic differences between the two samples do indeed exist. Specifically, the UVES sample comprises the majority of the high redshift systems in our sample due to observers more frequently observing with the red arm of the spectrograph. Because of the observed increase in frequency of higher equivalent width systems appearing at higher redshifts, the majority of the strong MgII systems are observed with UVES. However, none of this affects the results presented.
+
+  The HIRES and UVES spectrographs, in terms of instrumental properties, are remarkably similar. Resolution is accounted for in our detection algorithms and analysis, both instruments have roughly 3 pixels per resolution element, both instruments have a steady Gaussian ISF which is well characterized, and both instruments have very accurate wavelength calibration.
+
+  The primary difference lies in the error spectrum, where, in the case of HIRES, the blaze function in the red arm is notoriously difficult to deal with. This is not a problem in our analysis because the instrumental error spectra are not used in the detection algorithm or the determination of the equivalent width detection limit.
+
+  In the case of redshift path length differences, because we choose to evaluate only metrics which divide out the redshift path length, we fully and consistently account for those differences.
+
+  We feel that a discussion, or visualization, of the differences between the two instruments in the paper would distract the reader, putting a spotlight on sample differences which actually have no impact on the science being presented. Instead, we have added a paragraph in section 3.2 which briefly addresses these issues.
+
+2.3 - Concerning bias in sky-line regions:
+
+  We specifically exclude the major sky line regions from the spectrum and searched redshift path. We also evaluate the noise in small enough chunks so as to capture more patchy noise variations.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+3. Results
+
+3.1 - Sample Characterization
+
+  We addressed the UVES/HIRES problems above, but, in showing the SDSS samples beneath our data points, we fear the sheer volume of data and the significantly different dynamic range (specifically in equivalent width) would make it difficult to see our sample and cause us to alter axes enough to prohibit the reader to appropriately view our specific dynamic range. The plots just look messy, and we don't think the visualization of these samples helps display potential biases as effectively as the comparisons with the equivalent width frequency distributions.
+
+3.3 dN/dz and dN/dX
+
+  With regards to using n(z) and \sigma(z) in equation 7, we find it important to show these two parameters explicitly despite not fitting them separately because later in the paper, an important interpretation involves separating the behavior of both the number density and the cross section. Specifically, as photoionization modelling shows that the size of weak absorbers decreases as a function of decreasing redshift, we infer that the number density must be increasing.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+4.1 Evolution of MgII Distributions
+
+  It is difficult to compare the behavior of dN/dX for weak absorbers to those higher redshift surveys because they do not observe such low equivalent width MgII absorbers. We really have no data at these detection limits above redshift 2.5.
+
+4.2 Causes for Trends
+
+  Because there is no information on the hydrogen column density for these systems, we fear a separate plot similar to that of Simcoe 2011, figures 11 and 12, could cause confusion. Instead, we have expanded our discussion of the primary ionizing drivers of MgII in the text. 
