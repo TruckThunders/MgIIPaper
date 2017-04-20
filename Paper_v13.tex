@@ -210,7 +210,9 @@ In Figure~\ref{fig:dndz_dndx}, we plot $d\mathcal{N}\!/dz$ and $d\mathcal{N}\!/d
 \end{equation}
 
 \noindent
-where $c$ is the speed of light, $H_o$ is the Hubble Constant, $n_0$ is the comoving number density of ${\MgII}$ absorbers at $z = 0$, $\sigma_0$ is the absorbing cross-section at $z = 0$, and $\epsilon$ is the evolution parameter, defined as the power dependence of $d\mathcal{N}\!/dX$ on redshift. The product $n_0\,\sigma_0$ represents a comoving opacity of ${\MgII}$-selected absorption line systems by virtue of the units, which are an inverse length, and the analogous absorption coefficient to describe the opacity of material in stellar atmospheres. The full product of $\frac{c}{H_o} n_0\,\sigma_0$ then represents the Hubble optical depth for ${\MgII}$ absorbers. We find that the best-fit value of $\epsilon$ is negative when analyzing the full sample of ${\MgII}$ absorbers, including all detections with measured equivalent widths above $W_r^{\lambda2796} > 0.01$~{\AA}. The evolution parameter, $\epsilon$, then increases with subsequently larger minimum equivalent width thresholds, becoming positive for absorbers with $W_{r,\mathrm{min}}^{\lambda2796} > 1.0$~{\AA}. This trend is driven primarily by an enhancement in $d\mathcal{N}\!/dX$ for the strongest ${\MgII}$ absorbers around $z \sim 2$, relative to lower redshifts. Conversely, at low redshift we observe more weak ${\MgII}$ absorbers per absorption path length. We show in Table~\ref{tab:fitparams} the values of the fit parameters for varying $W_{r,\mathrm{min}}^{\lambda2796}$, along with their $1\sigma$ uncertainties.
+where $c$ is the speed of light, $H_o$ is the Hubble Constant, $n_0$ is the comoving number density of ${\MgII}$ absorbers at $z = 0$, $\sigma_0$ is the absorbing cross-section at $z = 0$, and $\epsilon$ is the evolution parameter, defined as the power dependence of $d\mathcal{N}\!/dX$ on redshift. We fit to the binned data using an orthogonal distance regression (ODR) method implemented in Python\footnote{https://docs.scipy.org/doc/scipy/reference/odr.html}. We use this approach in all cases where functional fits are applied, and discuss the robustness of this method in Section~\ref{sec:}
+
+The product $n_0\,\sigma_0$ represents a comoving opacity of ${\MgII}$-selected absorption line systems by virtue of the units, which are an inverse length, and the analogous absorption coefficient to describe the opacity of material in stellar atmospheres. The full product of $\frac{c}{H_o} n_0\,\sigma_0$ then represents the Hubble optical depth for ${\MgII}$ absorbers. We find that the best-fit value of $\epsilon$ is negative when analyzing the full sample of ${\MgII}$ absorbers, including all detections with measured equivalent widths above $W_r^{\lambda2796} > 0.01$~{\AA}. The evolution parameter, $\epsilon$, then increases with subsequently larger minimum equivalent width thresholds, becoming positive for absorbers with $W_{r,\mathrm{min}}^{\lambda2796} > 1.0$~{\AA}. This trend is driven primarily by an enhancement in $d\mathcal{N}\!/dX$ for the strongest ${\MgII}$ absorbers around $z \sim 2$, relative to lower redshifts. Conversely, at low redshift we observe more weak ${\MgII}$ absorbers per absorption path length. We show in Table~\ref{tab:fitparams} the values of the fit parameters for varying $W_{r,\mathrm{min}}^{\lambda2796}$, along with their $1\sigma$ uncertainties.
 
 \begin{deluxetable}{ccc}
 \tablecolumns{3}
@@ -331,7 +333,7 @@ $1.53 - 2.64$  & $0.12 \pm 0.08$ & $2.25 \pm 0.87$ & $-0.81 \pm 0.12$
 \subsection{Column Density Distribution}
 \label{sec:logndistro}
 
-To calculate the column density distribution, the number of absorbers of a given column density per unit path density, we calculate $d\mathcal{N}\!/dz$ or $d\mathcal{N}\!/dX$ for each column density bin and divide by the bin width. The result is a characteristic number density of ${\MgII}$ absorbers per redshift or absorption path length as a function of their column densities. It should be noted that at high column densities near $\log (N({\MgII})) = 15~\mathrm{cm^{-2}}$, the measured column densities are lower limits as the AOD method cannot constrain the true column when the absorption line becomes saturated.
+To calculate the column density distribution, the number of absorbers of a given column density per unit path density, we calculate $d\mathcal{N}\!/dz$ or $d\mathcal{N}\!/dX$ for each column density bin and divide by the bin width. The result is a characteristic number density of ${\MgII}$ absorbers per redshift or absorption path length as a function of their column densities. It should be noted that at high column densities near $\log (N({\MgII})) = 15~\mathrm{cm^{-2}}$, the measured column densities are lower limits as the AOD method cannot constrain the true column when the absorption line becomes saturated. In these cases, we turn to the ${\MgIIsecond}$ profile, adopting its value of column density instead.
 
 \begin{figure*}[bth]
 \epsscale{1.17}
@@ -340,7 +342,7 @@ To calculate the column density distribution, the number of absorbers of a given
 \label{fig:logndistro}
 \end{figure*}
 
-In Figure~\ref{fig:logndistro}, we plot the column density frequency distribution using either $d\mathcal{N}\!/dz$ or $d\mathcal{N}\!/dX$. Again, we fit this distribution with a Schechter function of the same form as Equation~\ref{eqn:schechter}, except with equivalent width replaced with column density. Table~\ref{tab:schechtern} shows the values of $\Phi^*$, $N^*$, and $\alpha$, along with their associated $1\sigma$ uncertainties. We find again that the low column density slope is shallower near $z \sim 2$ than at $z \sim 0.5$. Due to saturation effects, the highest column density measurements are lower limits; therefore, the final high column density bin in $f(N)$ should be regarded as an upper limit. These limits are taken into account in the functional fitting procedures.
+In Figure~\ref{fig:logndistro}, we plot the column density frequency distribution using either $d\mathcal{N}\!/dz$ or $d\mathcal{N}\!/dX$. Again, we fit this distribution with a Schechter function of the same form as Equation~\ref{eqn:schechter}, except with equivalent width replaced with column density. Table~\ref{tab:schechtern} shows the values of $\Phi^*$, $N^*$, and $\alpha$, along with their associated $1\sigma$ uncertainties. We find again that the low column density slope is shallower near $z \sim 2$ than at $z \sim 0.5$. Due to saturation effects, the highest column density measurements may still be lower limits based upon the ${\MgIIsecond}$ profile; therefore, the final high column density bin in $f(N)$ may be regarded as an upper limit. These limits are taken into account in the functional fitting procedures, where using the ODR fitting method we inflate the uncertainties in the positive x and y directions commensurate with the number of limit measurements.
 
 \begin{deluxetable}{lccc}
 \tablecolumns{4}
@@ -393,6 +395,7 @@ The results are shown below in Figure~\ref{fig:omegamgii}. $1\sigma$ uncertainti
 
 % Section 3.7
 \subsection{Assessing Possible Sightline Bias}
+\label{sec:bias}
 
 \begin{figure*}[bth]
 \epsscale{1.17}
@@ -426,6 +429,7 @@ We have shown a cosmic inventory of ${\MgII}$ absorbing gas from $0.1 < z < 2.6$
 
 % Section 4.1
 \subsection{Evolution of ${\MgII}$ Distributions}
+\label{sec:evolution}
 
 \cite{Narayanan2007} measured the evolution of weak ${\MgII}$ absorbers from $0.4 < z < 2.4$ in VLT/UVES spectra. They compared to \cite{Churchill1999}, who fitted the equivalent width frequency distribution with a power-law, and to \cite{Nestor2005}, who fitted an exponential to $f(W_r)$. In the case of weak absorbers at $z < 1.4$, \cite{Narayanan2007} found that a power-law with a slope of $\alpha = -1.04$ is a satisfactory fit, confirming the results of \cite{Churchill1999}. When they split their sample into low redshift, with detections between $0.4 < z < 1.4$, and high redshift, with detections between $1.4 < z < 2.4$, they found that the low redshfit sample remained consistent with a power-law but the high redshift sample was best fit by an exponential function. Our data show that a faint end power-law slope of $\alpha = -0.81$ is appropriate for the higher redshift subsample, and we note that this is also consistent with the data of~\cite{Narayanan2007}.
 
