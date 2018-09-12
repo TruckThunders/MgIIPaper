@@ -5,52 +5,47 @@ The style file: apj.bst
 Database file #1: Paper_v13Notes.bib
 Database file #2: bibliography.bib
 Warning--entry type for "MurphyPOPLER" isn't style-file defined
---line 1431 of file bibliography.bib
-Warning--I didn't find a database entry for "Prochter2006a"
-Warning--I didn't find a database entry for "Quider2011"
-Warning--I didn't find a database entry for "Seyffert2013"
-Warning--I didn't find a database entry for "Raghunathan2016"
-Warning--I didn't find a database entry for "HOT_HALOS_WORK"
+--line 1485 of file bibliography.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 78 entries,
+You've used 82 entries,
             3010 wiz_defined-function locations,
-            1145 strings with 22920 characters,
-and the built_in function-call counts, 39800 in all, are:
-= -- 3315
-> -- 3190
+            1158 strings with 23754 characters,
+and the built_in function-call counts, 42050 in all, are:
+= -- 3506
+> -- 3377
 < -- 17
-+ -- 1082
-- -- 1199
-* -- 3533
-:= -- 7573
-add.period$ -- 78
-call.type$ -- 78
-change.case$ -- 595
-chr.to.int$ -- 76
-cite$ -- 78
-duplicate$ -- 1494
-empty$ -- 2083
-format.name$ -- 1271
-if$ -- 7734
++ -- 1148
+- -- 1273
+* -- 3735
+:= -- 8001
+add.period$ -- 82
+call.type$ -- 82
+change.case$ -- 634
+chr.to.int$ -- 80
+cite$ -- 82
+duplicate$ -- 1570
+empty$ -- 2192
+format.name$ -- 1345
+if$ -- 8168
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 75
-newline$ -- 238
-num.names$ -- 314
-pop$ -- 654
+missing$ -- 79
+newline$ -- 250
+num.names$ -- 330
+pop$ -- 695
 preamble$ -- 1
-purify$ -- 594
+purify$ -- 633
 quote$ -- 0
-skip$ -- 1188
+skip$ -- 1251
 stack$ -- 0
-substring$ -- 1534
+substring$ -- 1621
 swap$ -- 22
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 702
+type$ -- 738
 warning$ -- 0
-while$ -- 298
+while$ -- 314
 width$ -- 0
-write$ -- 778
-(There were 6 warnings)
+write$ -- 818
+(There was 1 warning)

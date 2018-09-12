@@ -1,4 +1,4 @@
-\begin{thebibliography}{78}
+\begin{thebibliography}{82}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Bagdonaite} {et~al.}(2014){Bagdonaite}, {Ubachs}, {Murphy}, \&
@@ -257,6 +257,11 @@ Davidson, R., \& MacKinnon, J.~G. 2000, Econometric Reviews, 19, 55
   {Burles}}]{Prochter2006}
 {Prochter}, G.~E., {Prochaska}, J.~X., \& {Burles}, S.~M. 2006, \apj, 639, 766
 
+\bibitem[{{Quider} {et~al.}(2011){Quider}, {Nestor}, {Turnshek}, {Rao},
+  {Monier}, {Weyant}, \& {Busche}}]{Quider2011}
+{Quider}, A.~M., {Nestor}, D.~B., {Turnshek}, D.~A., {et~al.} 2011, \aj, 141,
+  137
+
 \bibitem[{{Quiret} {et~al.}(2016){Quiret}, {P{\'e}roux}, {Zafar}, {Kulkarni},
   {Jenkins}, {Milliard}, {Rahmani}, {Popping}, {Rao}, {Turnshek}, \&
   {Monier}}]{Quiret2016}
@@ -266,6 +271,11 @@ Davidson, R., \& MacKinnon, J.~G. 2000, Econometric Reviews, 19, 55
   {Neeleman}, \& {Mendez}}]{Rafelski2012}
 {Rafelski}, M., {Wolfe}, A.~M., {Prochaska}, J.~X., {Neeleman}, M., \&
   {Mendez}, A.~J. 2012, \apj, 755, 89
+
+\bibitem[{{Raghunathan} {et~al.}(2016){Raghunathan}, {Clowes}, {Campusano},
+  {S{\"o}chting}, {Graham}, \& {Williger}}]{Raghunathan2016}
+{Raghunathan}, S., {Clowes}, R.~G., {Campusano}, L.~E., {et~al.} 2016, \mnras,
+  463, 2640
 
 \bibitem[{{Rigby} {et~al.}(2002){Rigby}, {Charlton}, \&
   {Churchill}}]{Rigby2002}
@@ -279,6 +289,16 @@ Davidson, R., \& MacKinnon, J.~G. 2000, Econometric Reviews, 19, 55
 \bibitem[{{Sargent} {et~al.}(1988){Sargent}, {Steidel}, \&
   {Boksenberg}}]{Sargent1988}
 {Sargent}, W.~L.~W., {Steidel}, C.~C., \& {Boksenberg}, A. 1988, \apj, 334, 22
+
+\bibitem[{{Sarkar} {et~al.}(2015){Sarkar}, {Nath}, {Sharma}, \&
+  {Shchekinov}}]{Sarkar2015}
+{Sarkar}, K.~C., {Nath}, B.~B., {Sharma}, P., \& {Shchekinov}, Y. 2015, \mnras,
+  448, 328
+
+\bibitem[{{Seyffert} {et~al.}(2013){Seyffert}, {Cooksey}, {Simcoe}, {O'Meara},
+  {Kao}, \& {Prochaska}}]{Seyffert2013}
+{Seyffert}, E.~N., {Cooksey}, K.~L., {Simcoe}, R.~A., {et~al.} 2013, \apj, 779,
+  161
 
 \bibitem[{{Sharma} \& {Nath}(2013)}]{Sharma2013}
 {Sharma}, M., \& {Nath}, B.~B. 2013, \apj, 763, 17

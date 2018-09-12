@@ -6,9 +6,9 @@
 
 The UVES sample is, on average, slightly higher signal to noise, than the Keck sample. Because of this, the UVES sample has more very weak MgII absorbers. In addition, the UVES sample has more redshift path coverage at high redshift because the UVES data more frequently extends above 6000 angstrom.
 
-However, in the analysis of any distributions, such as the comparison between our equivalent width frequency distribution and that of Nestor, 2005, these detection sensitivities and redshift path length coverages are fully accounted for by our well-characterized equivalent width detection limits and by always working in units of dN/dz or dN/dX when computing the frequency distributions.
+However, in the analysis of any distributions, such as the comparison between our equivalent width frequency distribution and that of Nestor, 2005, these detection sensitivities and redshift path length coverages are accounted for by our well-characterized equivalent width detection limits and by always working with dN/dz or dN/dX.
 
-Pixelization is the same. Pixels per resolution element are the same. ISF are the same. My code doesn't make any assumptions based upon these characteristics. My code does not treat them any differently. Highly extensive analysis that has no bearing on the results of the paper.
+Pixelization of either instrument is the same. Pixels per resolution element are the same. The ISF is remarkable similar between the two instruments. We make no assumptions based upon these characteristics when detecting absorption lines. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 1. Introduction
@@ -65,4 +65,4 @@ Overall, based upon the sample still holding up as an unbiased, representative d
 
 4.2 Causes for Trends
 
-  Because there is no information on the hydrogen column density for these systems, we fear a separate plot similar to that of Simcoe 2011, figures 11 and 12, could cause confusion. Instead, we have expanded our discussion of the primary ionizing drivers of MgII in the text. 
+  Because there is no information on the hydrogen column density for these systems, we fear a separate plot similar to that of Simcoe 2011, figures 11 and 12, could cause confusion. Instead, we have expanded our discussion of the primary ionizing drivers of MgII in the text.

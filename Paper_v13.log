@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 APR 2017 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 APR 2017 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,22 +621,27 @@ File: hist_z_MgII_dndx.pdf Graphic file (type pdf)
  <use hist_z_MgII_dndx.pdf>
 Package pdftex.def Info: hist_z_MgII_dndx.pdf used on input line 200.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 213.
+
+
+LaTeX Warning: Reference `sec:' on page 4 undefined on input line 213.
 
 [4] <hist_nsigma_MgII_dndx.pdf, id=30, 578.16pt x 433.62pt>
 File: hist_nsigma_MgII_dndx.pdf Graphic file (type pdf)
 
 <use hist_nsigma_MgII_dndx.pdf>
-Package pdftex.def Info: hist_nsigma_MgII_dndx.pdf used on input line 240.
+Package pdftex.def Info: hist_nsigma_MgII_dndx.pdf used on input line 242.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
 
 <hist_epsilon_MgII_dndx.pdf, id=31, 578.16pt x 433.62pt>
 File: hist_epsilon_MgII_dndx.pdf Graphic file (type pdf)
 
 <use hist_epsilon_MgII_dndx.pdf>
-Package pdftex.def Info: hist_epsilon_MgII_dndx.pdf used on input line 240.
+Package pdftex.def Info: hist_epsilon_MgII_dndx.pdf used on input line 242.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
  [5 <./all_MgII_params.pdf>]
-Underfull \hbox (badness 1253) in paragraph at lines 272--273
+Underfull \hbox (badness 1253) in paragraph at lines 274--275
 \T1/ptm/m/n/10 where the fit pa-ram-e-ters for min-i-mum equiv-a-lent width
  []
 
@@ -644,14 +649,14 @@ Underfull \hbox (badness 1253) in paragraph at lines 272--273
 File: hist_ew_MgII_dndz.pdf Graphic file (type pdf)
 
 <use hist_ew_MgII_dndz.pdf>
-Package pdftex.def Info: hist_ew_MgII_dndz.pdf used on input line 291.
+Package pdftex.def Info: hist_ew_MgII_dndz.pdf used on input line 293.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
 
 <hist_ew_MgII_dndx.pdf, id=98, 578.16pt x 433.62pt>
 File: hist_ew_MgII_dndx.pdf Graphic file (type pdf)
 
 <use hist_ew_MgII_dndx.pdf>
-Package pdftex.def Info: hist_ew_MgII_dndx.pdf used on input line 291.
+Package pdftex.def Info: hist_ew_MgII_dndx.pdf used on input line 293.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
  [7 <./hist_z_MgII_dndz.pdf> <./hist_z_MgII_dndx.pdf
 
@@ -669,14 +674,14 @@ ltiple pdfs with page group included in a single page
 File: hist_logN_MgII_dndz.pdf Graphic file (type pdf)
 
 <use hist_logN_MgII_dndz.pdf>
-Package pdftex.def Info: hist_logN_MgII_dndz.pdf used on input line 338.
+Package pdftex.def Info: hist_logN_MgII_dndz.pdf used on input line 340.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
 
 <hist_logN_MgII_dndx.pdf, id=191, 578.16pt x 433.62pt>
 File: hist_logN_MgII_dndx.pdf Graphic file (type pdf)
 
 <use hist_logN_MgII_dndx.pdf>
-Package pdftex.def Info: hist_logN_MgII_dndx.pdf used on input line 338.
+Package pdftex.def Info: hist_logN_MgII_dndx.pdf used on input line 340.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
  [8 <./hist_ew_MgII_dndz.pdf> <./hist_ew_MgII_dndx.pdf
 
@@ -685,10 +690,10 @@ e pdfs with page group included in a single page
 >] <Omega_MgII.pdf, id=270, 578.16pt x 433.62pt>
 File: Omega_MgII.pdf Graphic file (type pdf)
  <use Omega_MgII.pdf>
-Package pdftex.def Info: Omega_MgII.pdf used on input line 389.
+Package pdftex.def Info: Omega_MgII.pdf used on input line 391.
 (pdftex.def)             Requested size: 250.173pt x 187.62408pt.
 
-Overfull \hbox (4.90648pt too wide) in paragraph at lines 389--390
+Overfull \hbox (4.90648pt too wide) in paragraph at lines 391--392
  [] 
  []
 
@@ -696,34 +701,15 @@ Overfull \hbox (4.90648pt too wide) in paragraph at lines 389--390
 File: hist_ew_MgII_strongz.pdf Graphic file (type pdf)
 
 <use hist_ew_MgII_strongz.pdf>
-Package pdftex.def Info: hist_ew_MgII_strongz.pdf used on input line 399.
+Package pdftex.def Info: hist_ew_MgII_strongz.pdf used on input line 402.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
  <cdf_fw.pdf, id=272, 578.16pt x 433.62pt>
 File: cdf_fw.pdf Graphic file (type pdf)
 
 <use cdf_fw.pdf>
-Package pdftex.def Info: cdf_fw.pdf used on input line 399.
+Package pdftex.def Info: cdf_fw.pdf used on input line 402.
 (pdftex.def)             Requested size: 255.14905pt x 191.36241pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 404.
-
-
-Package natbib Warning: Citation `Prochter2006a' on page 9 undefined on input l
-ine 404.
-
-
-Package natbib Warning: Citation `Quider2011' on page 9 undefined on input line
- 404.
-
-
-Package natbib Warning: Citation `Seyffert2013' on page 9 undefined on input li
-ne 404.
-
-
-Package natbib Warning: Citation `Raghunathan2016' on page 9 undefined on input
- line 404.
-
-[9 <./hist_logN_MgII_dndz.pdf> <./hist_logN_MgII_dndx.pdf
+ [9 <./hist_logN_MgII_dndz.pdf> <./hist_logN_MgII_dndx.pdf
 
 pdfTeX warning: pdflatex (file ./hist_logN_MgII_dndx.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -735,14 +721,14 @@ with page group included in a single page
 File: hist_z_MgII_dndz_between.pdf Graphic file (type pdf)
 
 <use hist_z_MgII_dndz_between.pdf>
-Package pdftex.def Info: hist_z_MgII_dndz_between.pdf used on input line 434.
+Package pdftex.def Info: hist_z_MgII_dndz_between.pdf used on input line 438.
 (pdftex.def)             Requested size: 234.53778pt x 175.89964pt.
 
 <hist_z_MgII_dndx_between.pdf, id=368, 578.16pt x 433.62pt>
 File: hist_z_MgII_dndx_between.pdf Graphic file (type pdf)
 
 <use hist_z_MgII_dndx_between.pdf>
-Package pdftex.def Info: hist_z_MgII_dndx_between.pdf used on input line 434.
+Package pdftex.def Info: hist_z_MgII_dndx_between.pdf used on input line 438.
 (pdftex.def)             Requested size: 234.53778pt x 175.89964pt.
  [10 <./hist_ew_MgII_strongz.pdf> <./cdf_fw.pdf
 
@@ -750,10 +736,10 @@ pdfTeX warning: pdflatex (file ./cdf_fw.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
 >]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 442.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 446.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 442.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 446.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -762,10 +748,10 @@ Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 File: hist_ew_MgII_totalz.pdf Graphic file (type pdf)
 
 <use hist_ew_MgII_totalz.pdf>
-Package pdftex.def Info: hist_ew_MgII_totalz.pdf used on input line 449.
+Package pdftex.def Info: hist_ew_MgII_totalz.pdf used on input line 453.
 (pdftex.def)             Requested size: 250.173pt x 187.62408pt.
 
-Overfull \hbox (4.90648pt too wide) in paragraph at lines 449--450
+Overfull \hbox (4.90648pt too wide) in paragraph at lines 453--454
  [] 
  []
 
@@ -777,25 +763,19 @@ multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./hist_ew_MgII_totalz.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] [12]
+>] [12] [13] [14] (./Paper_v13.bbl) [15] (./Paper_v13.aux)
 
-Package natbib Warning: Citation `HOT_HALOS_WORK' on page 13 undefined on input
- line 494.
+LaTeX Warning: There were undefined references.
 
-[13] (./Paper_v13.bbl [14])
-
-Package natbib Warning: There were undefined citations.
-
-[15] (./Paper_v13.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6075 strings out of 493089
- 80635 string characters out of 6134842
- 226492 words of memory out of 5000000
- 9402 multiletter control sequences out of 15000+600000
+ 6079 strings out of 493089
+ 80667 string characters out of 6134842
+ 235474 words of memory out of 5000000
+ 9406 multiletter control sequences out of 15000+600000
  89762 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,29p,1768b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -825,7 +805,7 @@ ymbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Paper_v13.pdf (15 pages, 896584 bytes).
+Output written on Paper_v13.pdf (15 pages, 897339 bytes).
 PDF statistics:
  580 PDF objects out of 1000 (max. 8388607)
  436 compressed objects within 5 object streams
